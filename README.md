@@ -9,7 +9,7 @@ $ cat ./backup.list
 ./src2/file2
 ```
 
-Destination directiries to copy:
+Destination directories to copy:
 ```
 $ cat ./backup_cfg.yml
 ---
