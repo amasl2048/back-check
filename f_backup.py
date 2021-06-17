@@ -15,9 +15,10 @@ def get_dir(dir_name: str) -> list:
     out = []
     flist = os.listdir(dir_name)  #;print(dir_name, flist)
 
-    for each in flist:
-        if not ".bak" in each[-4:]:
-            out.append(dir_name + "/" + each)
+    for fl in flist:
+        fname = os.path.join(dir_name, fl)
+        if os.path.isfile(fname) and not ".bak" in fl[-4:]:
+            out.append(fname)
 
     return out
 
