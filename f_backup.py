@@ -35,7 +35,7 @@ def av_files(DEST_DIRS: list) -> dict:
         if os.path.exists(dr):
             w_dirs[dr] = []
         else:
-            print("\nDirectory %s not available:", dr)
+            print("\nDirectory '%s' not available" % dr)
 
     for dr in w_dirs:
         w_dirs[dr] = w_dirs[dr] + get_dir(dr)

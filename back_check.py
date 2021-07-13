@@ -16,7 +16,7 @@ import f_backup
 
 print("\nStarting... \n--- ", time.strftime("%A, %d. %B %Y %H:%M"))
 
-dep = 5  # log rotate depth
+dep = 8  # log rotate depth
 
 with open("backup_cfg.yml", "r") as yml:
     DEST_DIRS = yaml.load(yml, Loader=SafeLoader)["dest_dirs"]  # config remote dirs
